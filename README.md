@@ -6,9 +6,6 @@
 This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
 
 
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
 
 <h2>Environments and Technologies Used</h2>
 
@@ -22,34 +19,40 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- A Web Server – Something that can run websites (Apache or Nginx).
+
+- PHP Installed – This is the language osTicket is built in (Version 8.0–8.2 is best).
+
+Also make sure some “extras” are enabled: mysqli, gd, imap, mbstring, xml, intl, json, zip.
+
+- A Database – MySQL or MariaDB to store ticket info.
+
+- An Email Account – So osTicket can send/receive ticket updates.
+
+- Folder Permissions – The osTicket folders /include and /attachments need “write” access so it can save files.
+
 
 <h2>Installation Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/v79FVHq.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+1.Delete the Setup Folder
+The first image shows me deleting the setup folder via Windows File Explorer. This is step 1 in cleaning up after installation and preventing unauthorized reconfiguration<br />
+
+<p>
+<img src="https://i.imgur.com/wIRq3P9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+<p>
+2.Fill in Configuration Details
+The second image displays the osTicket installer interface where you input system settings like URL, helpdesk name, admin account, and email crucial for the setup wizard/p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/GElM69x.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
+3. Finalize Installation & Permissions
+The third image illustrates the final installer screen confirming successful setup. It also highlights setting file permissions (e.g., modifying ost-config.php)</p>
 <br />
